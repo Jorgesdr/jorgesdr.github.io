@@ -1,101 +1,98 @@
-*{
-    --background-color: #6E6E6E;
-    --background-color2: #4D4D4D;
-    --text-color: #BAFF39;
-    --primary-color: #f4f4f4;
-    --border-color: #646464;
+* {
+  --background-color: #6e6e6e;
+  --background-color2: #4d4d4d;
+  --text-color: #baff39;
+  --primary-color: #f4f4f4;
+  --border-color: #646464;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: var(--primary-color);
-    background-color: var(--background-color);
-    text-wrap: balance;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  text-wrap: balance;
 }
 
-.languaje{
-   max-width: 70%;
-    text-align: right;
-    margin: auto;
+.languaje {
+  max-width: 70%;
+  text-align: right;
+  margin: auto;
 }
 
-.languajes{
-    cursor: pointer;
+.languajes {
+  cursor: pointer;
 }
 
-.languajes:hover{
-    color: var(--text-color);
+.languajes:hover {
+  color: var(--text-color);
 }
 
 header {
-    
-    padding: 20px;
+  padding: 20px;
 }
 
-
-h1{
-    font-size: 2em;
-    color: var(--text-color);
+h1 {
+  font-size: 2em;
+  color: var(--text-color);
 }
 
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
-.active{
-    color: var(--text-color);
-    font-weight: bold;
+.active {
+  color: var(--text-color);
+  font-weight: bold;
 }
 
-.header-content{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    max-width: 70%;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  max-width: 70%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.section{
-    display: grid;
-    grid-template-columns:repeat(auto-fill, minmax(500px, 1fr));
-    margin: auto;
-    gap: 1em;
-    max-width: 70%;
+.section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  margin: auto;
+  gap: 1em;
+  max-width: 70%;
 }
 
 a {
-    text-decoration: none;
-    color: #272727;
+  text-decoration: none;
+  color: #272727;
 }
 
 a:hover {
-    color: #000;
+  color: #000;
 }
 
-
-.proyect{
-    background-color: var(--background-color2);
-    margin: 1em;   
-    border:1px solid var(--border-color); 
-    border-radius: 10px;
-    position: relative;
-     overflow: hidden;
+.proyect {
+  background-color: var(--background-color2);
+  margin: 1em;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
-.proyect img{    
-    margin-top: 1em;
-    width: 530px; 
-    height: 180px;       
-    cursor: pointer;    
-    object-position: top;
-    object-fit: cover;
+.proyect img {
+  margin-top: 1em;
+  width: 530px;
+  height: 180px;
+  cursor: pointer;
+  object-position: top;
+  object-fit: cover;
 }
- /*
+/*
 .proyect-img::after {
     content: '';
     position: absolute;
@@ -108,86 +105,91 @@ a:hover {
 */
 
 .lightbox {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    margin: auto;    
-    cursor: pointer; 
-    top: 0;
-    left: 0;  
-    width: 100%;
-    height: 100%;    
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Asegura que el lightbox esté encima de todo */
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  margin: auto;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que el lightbox esté encima de todo */
 }
-.lightbox-img{
-    padding: 1em;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    width: 100vh;
-    height: 100vh;
+.lightbox-img {
+  padding: 1em;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100vh;
+  height: 100vh;
 }
 
 .lightbox img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
 }
 
-        /* Botón de cierre del Lightbox */
+/* Botón de cierre del Lightbox */
 .lightbox .close-btn {
-    position: absolute;
-    top: 8%;
-    right: 15px;
-    color: white;
-    font-size: 30px;    
-    padding: 5px 10px;
-    border-radius: 50%;
-    cursor: pointer;
+  position: absolute;
+  top: 8%;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.footer{
-    display: grid;
-    max-width: 70%;
-    align-items: center;
-    justify-content: center;
-    height: 10em;
-    background-color: var(--background-color2);
-    grid-template-columns: 1fr 1fr;
-    margin:20px auto ;
-    text-wrap: balance;
+.footer {
+  display: grid;
+  max-width: 70%;
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+  background-color: var(--background-color2);
+  grid-template-columns: 1fr 1fr;
+  margin: 20px auto;
+  text-wrap: balance;
 }
-.footer-url{
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-}
-
-.technologies{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;    
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    max-width: 70%;
-    background-color: var(--background-color2);
+.footer-url {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 }
 
-.technology{
-    display: grid;
-    width: 50%;
-    grid-template-columns: 1fr 1fr;    
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
+.technologies {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 70%;
+  background-color: var(--background-color2);
 }
 
+.technology {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  gap: 0.3em;
+}
 
-.technology img{    
-    width: 50px;
-    height: 50px;
-    
+.technology img {
+  width: 50px;
+  height: 50px;
+}
+
+.avatar-container img {
+  width: 80%;
+  height: 80%;
 }
