@@ -4,304 +4,293 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jorge Daza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"> </script>   
-
+    <script src="index.js"></script>   
 </head>
 
-<body > 
+<body>
     <header class="header">      
         <div class="languaje">
-            <strong id="esLanguaje" class="active languajes" >ES</strong> / <strong id="enLanguaje" class="languajes">EN</strong>
+            <strong id="esLanguaje" class="active languajes">ES</strong> / <strong id="enLanguaje" class="languajes">EN</strong>
         </div>
         <div class="header-content">
-            <div id="en"  class="hidden">
+            <div id="en" class="hidden">
                 <h1>WELCOME.</h1>
-                <p class="pa" >
-                    My name is Jorge Daza, a computer engineering student and a full-stack developer based in Granada, Spain.
-                      I have worked on a wide 
-                    range of projects, from small websites to complex web applications. I am passionate about creating 
-                    clean, responsive, and user-friendly websites. I am always eager to learn new technologies and 
-                    improve my skills. I am currently looking for new opportunities to work on exciting projects. 
-                    Feel free to contact me if you have any questions or would like to work together.
+                <p class="pa">
+                    My name is Jorge Daza, a computer engineering student and full-stack developer based in Granada, Spain.
+                    I've worked on a wide range of projects — from web apps to mobile applications deployed on Google Play.
+                    I'm passionate about clean, responsive, and user-friendly interfaces. Always eager to learn and grow.
+                    Feel free to reach out if you'd like to work together.
                 </p>
             </div>
             <div id="es">
                 <h1>Bienvenido.</h1>
-                <p class="pa" >
-                    Me llamo Jorge Daza, soy estudiante de Ingeniería Informática y desarrollador full-stack, con sede en Granada, España.
-                    He trabajado en una amplia variedad de proyectos, desde pequeñas páginas web hasta aplicaciones web complejas. Me apasiona crear sitios web limpios, responsivos y fáciles de usar. Siempre estoy dispuesto a aprender nuevas tecnologías y mejorar mis habilidades. Actualmente, estoy buscando nuevas oportunidades para trabajar en proyectos interesantes.
-                    No dudes en contactarme si tienes alguna pregunta o te gustaría trabajar conmigo.</p>
+                <p class="pa">
+                    Me llamo Jorge Daza, soy estudiante de Ingeniería Informática y desarrollador full-stack con sede en Granada, España.
+                    He trabajado en una amplia variedad de proyectos, desde aplicaciones web hasta apps móviles publicadas en Google Play.
+                    Me apasiona crear interfaces limpias, responsivas y fáciles de usar. Siempre dispuesto a aprender y mejorar.
+                    No dudes en contactarme si te gustaría trabajar conmigo.
+                </p>
             </div>
             <div class="avatar-container">
                 <img src="https://avatars.githubusercontent.com/u/77834992?v=4" alt="Jorge Daza" class="avatar">
             </div>
         </div>
     </header>
-    <div id="en" class="hidden">
+
+    <div id="en" class="hidden section-title">
         <h2>My Work</h2>
-        <p>A collection of projects I've worked on.</p>
+        <p>A collection of projects I've built.</p>
     </div>
-     <div id="es">
+    <div id="es" class="section-title">
         <h2>Mis proyectos</h2>
         <p>Una colección de proyectos en los que he trabajado.</p>
-
     </div>
 
     <section class="section">
-        <div class="proyect" >
+
+        <!-- Proyecto 1: Precios Rebajados -->
+        <div class="proyect">
             <div class="proyect-img">
-                <img class="lightbox-trigger" src="statics/img/afiliatesweb.webp" alt="preciosrebajados" onclick="openLightbox(this)"></img>
+                <img class="lightbox-trigger" src="statics/img/afiliatesweb.webp" alt="preciosrebajados" onclick="openLightbox(this)">
+                <div class="proyect-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Next.js</span>
+                    <span class="tag">Node.js</span>
+                </div>
             </div>
-            <div id="en" class="hidden">
+            <div id="en" class="hidden proyect-body">
                 <h4>Affiliate Program Web App</h4>
                 <p>
-                    This is a live application, so the code is not publicly available.
-                     For the front end, I used React along with Zustand for global state 
-                     management and Context API for handling less frequently changing states. Later migrate to Nextjs.
-                     On the backend, I implemented a server using Node.js and Express.js, 
-                     adhering to a design pattern based on Controllers, Routes, and Models.
+                    A live production application. Built with React + Zustand for state management, later migrated to Next.js.
+                    Backend powered by Node.js and Express.js following a Controller/Route/Model architecture.
+                    Code is private as this is a live product.
                 </p>
             </div>
-            <div id="es">
+            <div id="es" class="proyect-body">
                 <h4>Web de ofertas</h4>
                 <p>
-                    Se trata de una aplicación en funcionamiento, por lo que el código no está disponible públicamente.
-                     En el front end, utilicé React junto con Zustand para la gestión de estados globales y Context API para manejar estados que cambian con menor frecuencia. Posteriormente migre a Nextjs. En el backend, implementé un servidor utilizando Node.js y Express.js, siguiendo un patrón de diseño basado en Controladores, Rutas y Modelos.
-
+                    Aplicación en producción. Desarrollada con React + Zustand para gestión de estado, 
+                    posteriormente migrada a Next.js. Backend con Node.js y Express.js siguiendo un patrón
+                    Controlador/Ruta/Modelo. Código privado al estar en producción.
                 </p>
-
             </div>
-            <div>
-
-            
-            <a href="https://preciosrebajados.com" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" 
-                    width="24px" 
-                    height="24px" 
-                    viewBox="0 0 24 24" 
-                    fill="currentColor" 
-                    class="size-6">
-                    <path d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z" />
-                </svg>
-            </a> 
-            </div>           
-        </div>
-        <div  class="lightbox" onclick="closeLightbox(event)">
-            <div class="lightbox-img">
-                <img id="lightboxImg" src="" alt="Imagen Completa">
-            <div class="close-btn" onclick="closeLightbox(event)">×</div>
+            <div class="proyect-links">
+                <a href="https://preciosrebajados.com" target="_blank" title="Ver web">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="currentColor"><path d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z"/></svg>
+                </a>
             </div>
         </div>
+
+        <!-- Proyecto 2: Abesat -->
         <div class="proyect">
             <div class="proyect-img">
-                <img class="lightbox-trigger" src="statics/img/giffy.webp" onclick="openLightbox(this)" >
+                <img class="lightbox-trigger" src="statics/img/abesat.png" alt="Abesat" onclick="openLightbox(this)">
+                <div class="proyect-tags">
+                    <span class="tag">Next.js</span>
+                    <span class="tag">Tailwind CSS</span>
+                    <span class="tag">React</span>
+                </div>
             </div>
-            <div id="en" class="hidden">
-                <h4>GIF Search App</h4>
+            <div id="es" class="proyect-body">
+                <h4>Abesat — Despacho de Abogados</h4>
                 <p>
-                    This application is built using React, leveraging custom hooks and Context API for global state management. Its design focuses on simplicity and efficiency, offering an intuitive user experience for searching and displaying GIFs.
+                    Web para un despacho de abogados desarrollada con Next.js y Tailwind CSS. Diseño moderno y atractivo con
+                    sección de contacto integrada. Incluye un dashboard privado para que el cliente gestione citas y casos.
+                    Proyecto en producción — código no disponible.
                 </p>
             </div>
-            <div id="es">
-                <h4>Aplicación de Búsqueda de GIFs</h4>
+            <div id="en" class="hidden proyect-body">
+                <h4>Abesat — Law Firm Website</h4>
                 <p>
-                    Esta aplicación está desarrollada con React, utilizando custom hooks y la API de Context para la gestión de estados globales. Su diseño se centra en la simplicidad y la eficiencia, ofreciendo una experiencia de usuario intuitiva para buscar y mostrar GIFs.
+                    Website built for a law firm using Next.js and Tailwind CSS. Clean modern design with integrated contact section.
+                    Includes a private dashboard for managing appointments and cases.
+                    Production project — code not available.
                 </p>
             </div>
-            <div>
-                <a href="https://giffyapp-sigma.vercel.app/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" 
-                        width="24px" 
-                        height="24px" 
-                        viewBox="0 0 24 24" 
-                        fill="currentColor" 
-                        class="size-6">
-                        <path d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z" />
-                    </svg>            
-                </a>
-                <a href="https://github.com/Jorgesdr/giffyapp" target="_blank">
-                    <svg  aria-hidden="true" 
-                        viewBox="0 0 24 24" 
-                        version="1.1"  
-                        width="24px" 
-                        height="24px" 
-                        fill="currentColor"                    
-                        class="octicon octicon-mark-github v-align-middle color-fg-default">
-                        <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
-                    </svg>  
+            <div class="proyect-links">
+                <a href="https://abesat.es/" target="_blank" title="Ver web">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="currentColor"><path d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z"/></svg>
                 </a>
             </div>
-        </div>
-        
-        <div class="proyect">
-             <div class="proyect-img">
-                 <img class="lightbox-trigger" src="statics/img/tictactoe.webp" onclick="openLightbox(this)">
-             </div>
-             <div id="es">
-                 <h4>Juego de Tres en Raya</h4>
-                 <p>
-                    Este es un sencillo juego de Tres en Raya desarrollado con React. La aplicación no utiliza hooks ni bibliotecas adicionales de gestión de estados, basándose únicamente en los componentes de clase básicos de React para manejar la lógica del juego y las interacciones del usuario. Ofrece una experiencia de juego directa y entretenida.
-                 </p>
-             </div>
-             <div id="en" class="hidden">
-                    <h4>Tic-Tac-Toe Game</h4>
-                    <p>
-                        This is a simple Tic-Tac-Toe game built with React. The application does not use hooks or additional state management libraries, relying solely on React's basic class components to handle the game logic and user interactions. It offers a straightforward and engaging gameplay experience.
-                    </p>
-             </div>
-             <div>
-                 <a href="https://tictactoe-zeta-dun.vercel.app/" target="_blank">
-                     <svg xmlns="http://www.w3.org/2000/svg" 
-                         width="24px" 
-                         height="24px" 
-                         viewBox="0 0 24 24" 
-                         fill="currentColor" 
-                         class="size-6">
-                         <path d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z" />
-                     </svg>                  
-                 </a>
-                 <a href="https://github.com/Jorgesdr/tictactoe" target="_blank">
-                     <svg  aria-hidden="true" 
-                         viewBox="0 0 24 24" 
-                         version="1.1"  
-                         width="24px" 
-                         height="24px" 
-                         fill="currentColor"
-                         class="octicon octicon-mark-github v-align-middle color-fg-default">
-                         <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
-                     </svg>       
-                 </a>
-             </div>
         </div>
 
+        <!-- Proyecto 3: Energía App -->
         <div class="proyect">
-             <div class="proyect-img">
-                 <img class="lightbox-trigger" src="statics/img/abesat.png" onclick="openLightbox(this)">
-             </div>
-             <div id="es">
-                 <h4>Abesat</h4>
-                 <p>
-                    Esta web esta creada para un despacho de abogados , es una web creada con nextjs y tailwindcss, es una web sencilla pero con un diseño atractivo y moderno, cuenta con una sección de contacto para que los clientes puedan contactar con el despacho de abogados de forma fácil y rápida.
-                    Tambien añadimos un pequeño dashboard para que el cliente pueda gestionar sus citas y sus casos de forma fácil y rápida, el dashboard esta creado con react y tailwindcss, es una herramienta muy útil para el cliente ya que le permite gestionar sus citas y sus casos de forma fácil y rápida. Codigo no disponible por ser un proyecto en producción.
-                 </p>
-             </div>
-             <div id="en" class="hidden">
-                    <h4>Abesat</h4>
-                    <p>
-                        This website is created for a law firm, it is a website created with Next.js and Tailwind CSS. It is a simple website but with an attractive and modern design. It has a contact section so that clients can easily and quickly contact the law firm. We also added a small dashboard for the client to manage their appointments and cases easily and quickly. The dashboard is created with React and Tailwind CSS, it is a very useful tool for the client as it allows them to manage their appointments and cases easily and quickly. Code not available as it is a project in production.
-                    </p>
-             </div>
-             <div>
-                 <a href="https://abesat.es/" target="_blank">
-                     <svg xmlns="http://www.w3.org/2000/svg" 
-                         width="24px" 
-                         height="24px" 
-                         viewBox="0 0 24 24" 
-                         fill="currentColor" 
-                         class="size-6">
-                         <path d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z" />
-                     </svg>                  
-                 </a>
-                 
-             </div>
+            <div class="proyect-img">
+                <img class="lightbox-trigger" src="statics/img/energiaApp.PNG" alt="Energia App" onclick="openLightbox(this)">
+                <div class="proyect-tags">
+                    <span class="tag">React Native</span>
+                    <span class="tag">Expo</span>
+                    <span class="tag">Android</span>
+                </div>
+            </div>
+            <div id="es" class="proyect-body">
+                <h4>Energía App — Android</h4>
+                <p>
+                    App móvil publicada en Google Play. Muestra gasolineras cercanas filtradas por precio o distancia,
+                    puntos de carga para vehículos eléctricos y precios de la luz en tiempo real.
+                    Desarrollada con React Native y Expo.
+                </p>
+            </div>
+            <div id="en" class="hidden proyect-body">
+                <h4>Energía App — Android</h4>
+                <p>
+                    Mobile app published on Google Play. Shows nearby gas stations filtered by price or distance,
+                    electric vehicle charging points, and real-time electricity prices.
+                    Built with React Native and Expo.
+                </p>
+            </div>
+            <div class="proyect-links">
+                <a href="https://play.google.com/store/apps/details?id=com.awsdgames.energiaapp" target="_blank" title="Ver en Google Play">
+                    <!-- Play Store icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.65.19.97.07l.1-.06 11.04-6.37-2.96-2.97-9.15 9.33zm-1.11-19.7A1.99 1.99 0 0 0 2 5v14c0 .37.1.7.27 1l9.19-9.19-9.39-6.75zm20.6 8.04-2.89-1.67-3.26 3.26 3.26 3.27 2.9-1.68c.83-.48.83-1.7-.01-2.18zM4.15.3a1.01 1.01 0 0 0-.97.07L12.46 8.4l-2.97 2.97L4.15.3z"/></svg>
+                </a>
+            </div>
         </div>
-        
-         <div class="proyect">
-             <div class="proyect-img">
-                 <img class="lightbox-trigger" src="statics/img/energiaApp.PNG" onclick="openLightbox(this)">
-             </div>
-             <div id="es">
-                 <h4>Energia app</h4>
-                 <p>
-                    Esta app te muestra información sobre las gasolineras cercanas a tu ubicación (filtradas por precio, o por distancia), tambien cuenta con los puntos de carga para coches electricos cercanos a tu ubicación.Tambien tiene la funcionalidad de conocer los precios de la luz diariamente, lo cual te permite planificar tus gastos de energía de forma más eficiente.
-                 </p>
-             </div>
-             <div id="en" class="hidden">
-                    <h4>Energia app</h4>
-                    <p>
-                        This app shows information about nearby gas stations (filtered by price or distance), as well as electric vehicle charging points nearby. It also provides daily electricity price information, helping you plan your energy expenses more efficiently.
-                    </p>
-             </div>
-             <div>
-                 <a href="https://play.google.com/store/apps/details?id=com.awsdgames.energiaapp" target="_blank">
-                     <svg xmlns="http://www.w3.org/2000/svg" 
-                         width="24px" 
-                         height="24px" 
-                         viewBox="0 0 24 24" 
-                         fill="currentColor" 
-                         class="size-6">
-                         <path d="M21.721 12.752a9.711 9.711 0 0 0-.945-5.003 12.754 12.754 0 0 1-4.339 2.708 18.991 18.991 0 0 1-.214 4.772 17.165 17.165 0 0 0 5.498-2.477ZM14.634 15.55a17.324 17.324 0 0 0 .332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 0 0 .332 4.647 17.385 17.385 0 0 0 5.268 0ZM9.772 17.119a18.963 18.963 0 0 0 4.456 0A17.182 17.182 0 0 1 12 21.724a17.18 17.18 0 0 1-2.228-4.605ZM7.777 15.23a18.87 18.87 0 0 1-.214-4.774 12.753 12.753 0 0 1-4.34-2.708 9.711 9.711 0 0 0-.944 5.004 17.165 17.165 0 0 0 5.498 2.477ZM21.356 14.752a9.765 9.765 0 0 1-7.478 6.817 18.64 18.64 0 0 0 1.988-4.718 18.627 18.627 0 0 0 5.49-2.098ZM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 0 0 1.988 4.718 9.765 9.765 0 0 1-7.478-6.816ZM13.878 2.43a9.755 9.755 0 0 1 6.116 3.986 11.267 11.267 0 0 1-3.746 2.504 18.63 18.63 0 0 0-2.37-6.49ZM12 2.276a17.152 17.152 0 0 1 2.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0 1 12 2.276ZM10.122 2.43a18.629 18.629 0 0 0-2.37 6.49 11.266 11.266 0 0 1-3.746-2.504 9.754 9.754 0 0 1 6.116-3.985Z" />
-                     </svg>                  
-                 </a>
-                 
-             </div>
+
+        <!-- Proyecto 4: Tapriot -->
+        <div class="proyect">
+            <div class="proyect-img proyect-placeholder">
+                <div class="placeholder-content">
+                    <!-- Game controller icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M6 12h4M8 10v4"/><circle cx="16" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="18" cy="13" r="1" fill="currentColor" stroke="none"/></svg>
+                </div>
+                <div class="proyect-tags">
+                    <span class="tag">React Native</span>
+                    <span class="tag">Expo</span>
+                    <span class="tag">iOS</span>
+                    <span class="tag">Android</span>
+                </div>
+            </div>
+            <div id="es" class="proyect-body">
+                <h4>Tapriot — Tap Battle</h4>
+                <p>
+                    Juego móvil multijugador de reflejos publicado en la App Store. El objetivo es tapear la pantalla
+                    más rápido que tu rival. Desarrollado con React Native y Expo, disponible para iOS y Android.
+                </p>
+            </div>
+            <div id="en" class="hidden proyect-body">
+                <h4>Tapriot — Tap Battle</h4>
+                <p>
+                    Multiplayer reflex mobile game published on the App Store. The goal is to tap the screen
+                    faster than your opponent. Built with React Native and Expo, available for iOS and Android.
+                </p>
+            </div>
+            <div class="proyect-links">
+                <a href="https://apps.apple.com/us/app/tapriot-tap-battle/id6763916794" target="_blank" title="Ver en App Store">
+                    <!-- App Store icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                </a>
+            </div>
         </div>
-                   
-        
+
+        <!-- Proyecto 5: App de Horarios (trabajo) -->
+        <div class="proyect">
+            <div class="proyect-img proyect-placeholder">
+                <div class="placeholder-content">
+                    <!-- Calendar / schedule icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+                </div>
+                <div class="proyect-tags">
+                    <span class="tag">React Native</span>
+                    <span class="tag">Expo</span>
+                    <span class="tag">PDF Parse</span>
+                    <span class="tag">Privado</span>
+                </div>
+            </div>
+            <div id="es" class="proyect-body">
+                <h4>App de Horarios — Uso interno</h4>
+                <p>
+                    App interna desarrollada para mi equipo de trabajo. Los horarios llegan en PDF,
+                    se procesan automáticamente y se muestran de forma clara a cada compañero desde
+                    la app. Desarrollada con React Native, Expo y una base de datos en la nube.
+                    Código privado por contener datos personales.
+                </p>
+            </div>
+            <div id="en" class="hidden proyect-body">
+                <h4>Schedule App — Internal use</h4>
+                <p>
+                    Internal app built for my work team. Schedules arrive as PDFs, get automatically
+                    parsed and displayed clearly to each coworker via the app. Built with React Native,
+                    Expo and a cloud database. Private code due to personal data.
+                </p>
+            </div>
+            <div class="proyect-links">
+                <span class="private-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Privado
+                </span>
+            </div>
+        </div>
+
     </section>
-    <div id="en" class="hidden">
+
+    <!-- Lightbox -->
+    <div class="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-img">
+            <img id="lightboxImg" src="" alt="Imagen Completa">
+            <div class="close-btn" onclick="closeLightbox(event)">×</div>
+        </div>
+    </div>
+
+    <div id="en" class="hidden section-title">
         <h2>Technologies</h2>
         <p>Technologies I've worked with.</p>
     </div>
-    <div id="es">
+    <div id="es" class="section-title">
         <h2>Tecnologías</h2>
         <p>Tecnologías con las que he trabajado.</p>
     </div>
     <section class="technologies">
         <div class="technology">
-            <img src="statics/img/react.webp" alt="React"></img>
+            <img src="statics/img/react.webp" alt="React">
             <h4>React</h4>
         </div>
         <div class="technology">
-            <img src="statics/img/node.webp" alt="Node.js"></img>
+            <img src="statics/img/node.webp" alt="Node.js">
             <h4>Node.js</h4>
         </div>
-         <div class="technology">
+        <div class="technology">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="45"><mask height="180" id=":r8:mask0_408_134" maskUnits="userSpaceOnUse" width="180" x="0" y="0" style="mask-type: alpha;"><circle cx="90" cy="90" fill="black" r="90"></circle></mask><g mask="url(#:r8:mask0_408_134)"><circle cx="90" cy="90" data-circle="true" fill="black" r="90"></circle><path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#:r8:paint0_linear_408_134)"></path><rect fill="url(#:r8:paint1_linear_408_134)" height="72" width="12" x="115" y="54"></rect></g><defs><linearGradient gradientUnits="userSpaceOnUse" id=":r8:paint0_linear_408_134" x1="109" x2="144.5" y1="116.5" y2="160.5"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id=":r8:paint1_linear_408_134" x1="121" x2="120.799" y1="54" y2="106.875"><stop stop-color="white"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></linearGradient></defs></svg>
-            <h4>NextJs</h4>
+            <h4>Next.js</h4>
         </div>
-         <div class="technology">
-            <img src="statics/img/react.webp" alt="React"></img>
+        <div class="technology">
+            <img src="statics/img/react.webp" alt="React Native">
             <h4>React Native</h4>
         </div>
-         <div class="technology">
-            <img src="statics/img/aws.webp" alt="Node.js"></img>
+        <div class="technology">
+            <img src="statics/img/aws.webp" alt="AWS">
             <h4>AWS EC2</h4>
         </div>
-
+        <div class="technology">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="45" height="45">
+                <path fill="#007acc" d="M2 63.91v62.5h125v-125H2zm100.73-5a15.56 15.56 0 017.82 4.5 20.58 20.58 0 013 4c0 .16-5.4 3.81-8.69 5.85-.12.08-.6-.44-1.13-1.23a7.09 7.09 0 00-5.87-3.53c-3.79-.26-6.23 1.73-6.21 5a4.58 4.58 0 00.54 2.34c.83 1.73 2.38 2.76 7.24 4.86 8.95 3.85 12.78 6.39 15.16 10 2.66 4 3.25 10.46 1.45 15.24-2 5.2-6.9 8.73-13.83 9.9a38.32 38.32 0 01-9.52-.1 23 23 0 01-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34 9.34 0 011.15-.73l4.6-2.64 3.57-2.05.75 1.11a16.78 16.78 0 004.74 4.54c4 2.1 9.46 1.81 12.16-.62a5.43 5.43 0 00.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48 16.48 0 01-3.43-6.25 25 25 0 01-.22-8c1.33-6.23 6-10.58 12.82-11.87a31.66 31.66 0 019.49.26zm-29.34 5.24v5.12H57.16v46.23H45.55V69.26H29.31v-5a49.19 49.19 0 01.14-5.16c.06-.08 10-.12 22-.1h21.81z"/>
+            </svg>
+            <h4>TypeScript</h4>
+        </div>
     </section>
+
     <footer class="footer">
         <div id="es" class="footer-contact">
             <h3>Contacto</h3>
-            <p>Si tienes alguna pregunta o te gustaría trabajar conmigo, no dudes en ponerte en <a href="mailto:jorge1439@hotmail.com"> contacto </a> conmigo.</p>
-
+            <p>Si tienes alguna pregunta o te gustaría trabajar conmigo, no dudes en ponerte en <a href="mailto:jorge1439@hotmail.com">contacto</a> conmigo.</p>
         </div>
-        <div id="en" class="footer-contact">
+        <div id="en" class="hidden footer-contact">
             <h3>Contact</h3>
-                <p>If you have any questions or would like to work with me, feel free to <a href="mailto:jorge1439@hotmail.com">contact</a> me.</p>
-
+            <p>If you have any questions or would like to work with me, feel free to <a href="mailto:jorge1439@hotmail.com">contact</a> me.</p>
         </div>
         <div class="footer-url">
             <a href="https://github.com/Jorgesdr" target="_blank">
-                <svg  aria-hidden="true" 
-                    viewBox="0 0 24 24" 
-                    version="1.1"  
-                    width="24px" 
-                    height="24px" 
-                    fill="currentColor"
-                    class="octicon octicon-mark-github v-align-middle color-fg-default">
-                    <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
-                </svg>   
-
+                <svg aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="24px" height="24px" fill="currentColor"><path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"/></svg>
             </a>            
             <a href="https://www.linkedin.com/in/jorgedaro/" target="_blank">                
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M 21.800781 0 L 2.199219 0 C 1 0 0 1 0 2.199219 L 0 21.800781 C 0 23 1 24 2.199219 24 L 21.800781 24 C 23 24 24 23 24 21.800781 L 24 2.199219 C 24 1 23 0 21.800781 0 Z M 7 20 L 3 20 L 3 9 L 7 9 Z M 5 7.699219 C 3.800781 7.699219 3 6.898438 3 5.898438 C 3 4.800781 3.800781 4 5 4 C 6.199219 4 7 4.800781 7 5.800781 C 7 6.898438 6.199219 7.699219 5 7.699219 Z M 21 20 L 17 20 L 17 14 C 17 12.398438 15.898438 12 15.601563 12 C 15.300781 12 14 12.199219 14 14 C 14 14.199219 14 20 14 20 L 10 20 L 10 9 L 14 9 L 14 10.601563 C 14.601563 9.699219 15.601563 9 17.5 9 C 19.398438 9 21 10.5 21 14 Z"></path>
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"><path d="M 21.800781 0 L 2.199219 0 C 1 0 0 1 0 2.199219 L 0 21.800781 C 0 23 1 24 2.199219 24 L 21.800781 24 C 23 24 24 23 24 21.800781 L 24 2.199219 C 24 1 23 0 21.800781 0 Z M 7 20 L 3 20 L 3 9 L 7 9 Z M 5 7.699219 C 3.800781 7.699219 3 6.898438 3 5.898438 C 3 4.800781 3.800781 4 5 4 C 6.199219 4 7 4.800781 7 5.800781 C 7 6.898438 6.199219 7.699219 5 7.699219 Z M 21 20 L 17 20 L 17 14 C 17 12.398438 15.898438 12 15.601563 12 C 15.300781 12 14 12.199219 14 14 C 14 14.199219 14 20 14 20 L 10 20 L 10 9 L 14 9 L 14 10.601563 C 14.601563 9.699219 15.601563 9 17.5 9 C 19.398438 9 21 10.5 21 14 Z"/></svg>
             </a>
         </div>
-      
     </footer>
 </body>
 </html>
